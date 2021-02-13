@@ -84,7 +84,7 @@ for (let i = 0; i < numbers.length; i++) {
     } else {
         discardedNumbers.push(numbers[i]);
     }
-}
+} }
 
 
 
