@@ -1,0 +1,22 @@
+{
+    "person1":{
+        "id":"1",
+        "firstName":"Marie",
+        "lastName":"Curie",
+        "email":"mar@gmail.com"
+    },
+
+    "person2":{
+        "id":2,
+        "firstName":"Mother",
+        "lastName":"Teresa",
+        "email":"mot@gmail.com"
+    },
+
+    "person3":{
+        "id":3,
+        "firstName":"Albert",
+        "lastName":"Einstine",
+        "email":"alb@gmail.com"
+    }
+}
