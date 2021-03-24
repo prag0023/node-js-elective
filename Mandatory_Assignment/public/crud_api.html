@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: rgb(220, 243, 243);">
+    <h1>Creating a rest API project having CRUD functionality on VS code with node.js</h1>
+
+    <p style="padding-left: 20px; padding-right:20px ; text-align:left ; text-align: justify; line-height:2; font-size:large;">
+        <b> <i> CRUD is an acronym that comes from the world of computer programming and refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete.</i></b> <br>
+        Here, we have created a project applying the all the four functionality of CRUD with hardcoded database and serving it with express. So, lets get started. <br>
+        
+        First create a folder in Vs then change your directory into the folder. Inside the folder create a file (package.json) 
+        Inside the package.json file give the dependencies and the version of express <br>
+        <img style ="padding-left: 300px ;"src ="/images/dependencies.png"  width="300px "height ="100px "><br><br>
+        Then, we move to our Vs terminal where we install express with the command :<b> npm install express</b><br>
+
+        <img  style ="padding-left: 300px ;"src ="/images/express.png"  width=" 300px "height ="100px"><br><br>
+        When we install express it creates package-lock-json and pulls all the node modules.
+
+        Now we move forward and create app.js which we be the main file which will contain our all routes and main running file. 
+        In the app.js file <br>
+        <img style ="padding-left: 300px ;"src ="/images/app.png" width=" 300px "height ="100px"><br>
+        Here, we have first initialized our express app and the gave the port where our server can run.<br><br>
+
+         To manupulate our functionality lets create some data so that we could play around.<br>
+         <img  style ="padding-left: 300px ;"src ="/images/data.png"  width=" 300px "height ="300px"> <br><br>
+
+    
+
+        <b> GET METHOD </b> <br><br>
+        <img  style ="padding-left: 300px ;"src ="/images/get_all.png"  width=" 400px "height ="100px"> <br><br>
+        <img  style ="padding-left: 300px ;"src ="/images/get.png"  width=" 600px "height ="100px"><br><br>
+        In the snippet of code, we have the get method which takes the endpoint and the call back, then in the parentheses we have two arguments request and response  and then we have our function which will send our corresponding data into the server with res.send.
+        As, seen above the first snippet of code get all the data and the second snippet of code gets the data by id . 
+        Then in the terminal we install the nodemon :<b> npm install -g nodemon.</b> <br>
+        <i>Nodemon is a tool that helps the develop node.js based applications by automatically restarting the node application when the file changes.</i><br><br>
+
+        <b>POST method </b><br><br>
+        <img  style ="padding-left: 300px ;"src ="/images/post.png"  width=" 300px "height ="100px"><br><br>
+        Post method is used for creating resource. You need to have a response body in the post method. You cannot send post, patch, or delete request in the url directly it is only for the get request. So we are using a tool called post man to test our all http methods.<br>
+         <br> <br>
+
+         <b>PATCH METHOD</b><br> <br>
+         <img  style ="padding-left: 300px ;"src ="/images/patch.png"  width=" 300px "height ="100px"> <br> <br>
+         It updates a part of resource meaning it is used for making partial changes to an existing resource. The PATCH method provides an entity containing a list of changes to be applied to the resource requested using the HTTP Uniform Resource Identifier(URI).<br>
+         br><br>
+
+         <b>DELETE METHOD</b><br><br>
+         <img  style ="padding-left: 300px ;"src ="/images/delete.png"  width=" 500px "height ="100px"> <br><br>
+         It deletes the resource. The DELETE method requests that the origin server delete the resource identified by the request-URI.<br>
+
+         Our CRUD application with is ready and is running on :<br>
+         <img  style ="padding-left: 300px ;"src ="/images/app.listen.png"  width=" 300px "height ="100px"> <br><br>
+
+
+
+
+
+
+
+
+
+        </p>
+
+
+        <a href ="/api"> Go Back </a>
+</body>
+</html>
