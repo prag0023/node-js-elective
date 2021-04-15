@@ -1,36 +1,46 @@
- const express = require("express");
- const app = express();
 
- // const app = require(express)(): = it is the same way as above but in same line 
+const express = require("express");
+const app = express();
 
- app.get("/" , (req, res) => {
-     // send an empty json as required
-     res.send({});
+// consider what datatype to store your data in
+// you are allowed to hardcode the id
+
+const persons = [ 
+    {
+        "person1":{
+            "id":"1",
+            "firstName":"Marie",
+            "lastName":"Curie",
+            "email":"mar@gmail.com"
+        },
+    
+        "person2":{
+            "id":2,
+            "firstName":"Mother",
+            "lastName":"Teresa",
+            "email":"mot@gmail.com"
+        },
+    
+        "person3":{
+            "id":3,
+            "firstName":"Albert",
+            "lastName":"Einstine",
+            "email":"alb@gmail.com"
+        }
+    }
+
+
+     
+]
+
+app.get("/persons", (req, res) => {
+    res.send(persons);
+    //res.send({ message: "First messgae" });
 });
 
- // create a route on the endpoint me which sends back a json that represents you
- app.get("/me", (req, res) =>{
-     const me = {
-       name:"Pragya Chudal"
-     }
-     res.send(me);
- });
+app.get("/persons/id", (req, res) => {
+    const id = "";
+    res.send(persons);
+});
 
-//********************************************************************************************************************************* */
- //Lecture 4 :: CLASSWORK 
-
- // create a route called about that serves a hardcoded API version number in a string
- app.get("/about", (req, res)=>{
-    res.send({
-      version :"1.0.0"
-    })
-
- });
- // a header tag that says welcome in page
-
- app.get("/page" , (req, res)=>{
-   res.send("<h1> Welcome </h1>");
- });
-
-
- app.listen(8080);
+app.listen(4040);

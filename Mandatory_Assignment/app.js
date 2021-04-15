@@ -34,13 +34,6 @@ app.get("/crud_api", (req,res)=>{
     res.sendFile(__dirname + "/public/crud_api.html");
 });
 
-
-
-
-
-
-
-
 const port = process.env.PORT || 8080;
 
 app.listen(port, (error) => {
