@@ -1,0 +1,32 @@
+.single-page {
+    display:flexbox;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.header1 {
+    font-size: 30px;
+    margin-bottom: 3.6rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row ;
+    width: 60%;
+    
+
+}
+
+.square{
+    width: 5%;
+    height: 10px;
+    border: 1px solid black;
+    background-color:lightgray;
+}
+
+.fill {
+    background-color:lightcoral;
+}

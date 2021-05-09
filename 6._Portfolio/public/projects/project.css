@@ -1,0 +1,29 @@
+#projects {
+    margin-top: 2px;
+    margin-left:10 rem; 
+    font-size: 5px;
+    font-family: ' serif';
+}
+
+.projectTitle {
+    font-size:40px;
+    margin: 4rem;
+    font-family: 'cursive';
+    background-color: rgb(180, 186, 240);
+    text-align: center;
+}
+
+.projectDescription, .projectType, .projectTech, .projectLanguages, .projectStartDate, .projectEndDate, .projectGitLink {
+    font-size: 20px;
+    
+    padding-left: 80px;
+    text-justify: center;
+}
+.projectDescription, .projectType, .projectTech, .projectLanguages, .projectStartDate, .projectEndDate {
+    font-family: 'Times New Roman';
+    
+}
+
+.project-description {
+    margin-top: 2 rem;
+}

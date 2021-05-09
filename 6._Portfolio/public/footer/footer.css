@@ -1,0 +1,15 @@
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+   }
+
+.social-media {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-image{
+    width:2%;
+    margin: 8px;
+    
+}

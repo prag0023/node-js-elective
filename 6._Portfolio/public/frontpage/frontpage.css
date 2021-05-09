@@ -1,0 +1,36 @@
+.name-title{
+   margin: 20px;
+   
+   justify-content: center;
+}
+.name{
+    font-size:250%;
+    font-family: Georgia;
+}
+.title{
+    font-family: cursive;
+    font-size: 150%;
+}
+
+.intro{
+   margin-top: 5 px;
+}
+
+* {
+    box-sizing: border-box;
+    }
+   .column {
+    float: left;
+    width: 35%;
+    padding-left: 100px;
+    height: 300px;
+    text-justify:center;
+    font-family:Verdana ;
+    font-size: large;
+}
+    
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }

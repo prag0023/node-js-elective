@@ -1,0 +1,64 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background-color: #b6cbf8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  input, button, textarea {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-image: none;
+    background-color:#b3f8fa;
+    box-shadow: none;
+    padding: 5px;
+    min-height: 30px;
+  }
+  input:focus, button:focus, textarea:focus {
+    outline: none;
+  }
+  
+  textarea {
+    min-height: 70px;
+    resize: vertical;
+  }
+  
+  button {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .contact{
+    border: 1px solid black;
+    max-width: 350px;
+    background-color:#c2e7fc;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-header {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+
+  }
+  .contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact__message {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .contact button {
+    margin-top: 10px;
+    align-self: flex-end;
+    text-align: center;
+  }
